@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Comic Neue' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/> 
+    <link rel="stylesheet" type="text/css" href="styles/topnav.css"/>     
+    <link rel="stylesheet" type="text/css" href="styles/footer.css"/>    
+    <link rel="stylesheet" type="text/css" href="styles/calculator.css"/>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="scripts/footer.js"></script>  
+    </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <div><a href="homepage.html"><img src="images\baconicon.png" alt="bacon" class="bacon-icon"></a></div>
+        <div class="item-2"><h2>Ezekiel's Super Cool Ahh Website</h2></div>
+        <div class="topnav" id="myTopnav">
+          <div class="dropdown">
+            <b><button class="dropbtn">Menu
+              <i class="fa fa-caret-down"></i>
+            </button></b>
+            <div class="dropdown-content">
+              <a href="flexbox.html">Flexbox</a>
+              <a href="grid.html">Grids N' Stuff</a>
+              <a href="float.html">Float</a>
+              <a href="calculator.html">Calculator</a>
+              <a href="homepage.html">Home Page</a>
+
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </div>
+      
+      <div class="content">
+        <br>
+        <h1 style="text-align: center;">Calculator</h1>
+        <div class="calculator">
+            <input type="text" id="num1" placeholder="Enter first number">
+            <input type="text" id="num2" placeholder="Enter second number">
+            <button id="addBtn">+</button>
+            <button id="subBtn">-</button>
+            <button id="mulBtn">x</button>
+            <button id="divBtn">/</button>
+            <h2 id="result">Result: </h2>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="footer-container">
+          <div class="social-icons">
+            <a href="https://www.instagram.com/ezlasagna/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="homepage.html">Home</a></li>
+              <li><a href="flexbox.html">Flexbox</a></li>
+              <li><a href="grid.html">Grids</a></li>
+              <li><a href="calculator.html">Calculator</a></li>
+              <li><a href="greeting-card.html">Greeting Cards</a></li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <p>Copyright &copy;2024 Designed by <span class="designer">Ezekiel Lozano</span></p>
+          </div>        
+        </div>  
+      </footer>
+      <script src="scripts/calculator.js"></script>
+    </div>
+  </body>
+</html>

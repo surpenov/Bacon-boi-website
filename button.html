@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox</title>
+        <!--links the whole html to a css file or js-->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" /> 
+    <link rel="stylesheet" type="text/css" href="styles/topnav.css" /> 
+    <link rel="stylesheet" type="text/css" href="styles/button.css"/>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/button.js"></script>
+        <!--allows scaling for all devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <img src="C:\Users\ezekiel.lozano\Documents\Ezekiel's Projects\project-0\my-first-website\images\deepwoken.webp"alt-="deepwoken" class="deepwokenImage">
+      <a href="index.html" class="active">Home</a>
+  
+          <!--Calls the class in the linked css in head-->
+        <div class="dropdown">
+          <button class="dropbtn">Dropdown 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          
+          <!--Calls the class in the linked css in head-->
+          <div class="dropdown-content">
+            <!--Makes a link to another url-->
+            <a href="flexbox.html">Flexbox</a>
+            <a href="grid.html">Grid</a>
+            <a href="button.html">Buttons N' Stuff</a>
+          </div>
+        </div> 
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+
+<h1>Buttons N' Stuff</h1>
+
+<div>
+  <!-- id="" makes that element able to be changed in js-->
+    <p id="demo">JavaScript can change the <b>style</b> of an HTML element.</p>
+    <!--BUtton to change style, onclick="" is basically, 'when the buttons clicked it will call the function "" that's in js'-->
+    <button type="button" onclick="myFunction()">Click Me To Change The Style!</button>
+</div>
+<br>
+
+<div>
+    <p>JavaScript can also change the <b>content</b> of an HTML element:</p>
+
+    <!--Button to change content-->
+    <button type="button" onclick="myFunction2()">Click Me To Change The Sentence!</button>
+    <p id="demo2">The content of this text will change.</p>
+</div>
+<br>
+
+<div>
+  <p>You can also use buttons to switch <b>between contents</b> (I used chatGPT for this part) </p>
+  <p id="demo3">What's 1+1?</p>
+
+    <!-- Button to change content -->
+<button onclick="myFunction3Answer()">Answer</button>
+
+<!-- Button to revert content -->
+<button onclick="myFunction3Revert()">Back to question</button>
+</div>
+
+<div class="center">
+  <button id="colorButton" onclick="changeColor()">Click Me!</button>
+</div>
+
+
+</body>
+</html>

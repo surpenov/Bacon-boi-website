@@ -1,0 +1,30 @@
+.flex-container { /*container settings/style*/
+    display: flex;
+    /*flex-direction: column; turns the items into columns, default is row; */
+
+    /*justify-content: flex-end; makes the items go to the end, default is flex-start;*/
+    justify-content: center; /*makes the items centered*/
+     /*justify-content: space-around;makes the items spaced*/
+    justify-content: space-evenly;
+
+    /*align-items: flex-start; default is flex-start*/
+    /*align-items: flex-end; places items at the end of the cross axis*/
+    /*align-items: center; centers the items on the cross axis*/
+    /*align-items: baseline; align items that the baseline text of each item is aligned*/
+
+    /*flex-wrap: nowrap; the default, makes the items cram*/
+    /*flex-wrap: wrap; makes the items wrap when theres no more space available*/
+    
+    /*align-content: flex-end; only works when there are items wrapping*/
+    /*gap: 1cm; sets a gap between eaech item */
+
+    background-color: #2a2625;
+  }
+
+  .flex-container > div {
+    background-color: #9a9a9a8f;
+    margin: 30px;
+    padding: 30px;
+    font-size: 22px;
+  }
+

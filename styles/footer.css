@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Make the wrapper take at least the full height of the viewport */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This makes the wrapper take full height of the viewport */
+}
+
+.content{
+    flex: 1; /* This makes the content take all the available space */
+}
+
+/* The main footer attributes*/
+footer {
+    background-color: #181514;
+    width: 100%;
+    margin-top: auto; /* This pushes the footer to the bottom of the page */
+}
+
+/*The actual footer container attributes*/
+.footer-container {
+    width: 100%;
+    padding: 1px 20px 20px;
+}
+
+/* social icon flexbox attributes */
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+/* the icon background attributes */
+.social-icons a {
+    text-decoration: none;
+    padding: 8.7px;
+    background-color: #f3d4cd;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+/* when the cursor hovers over the icon the bg changes*/
+.social-icons a:hover {
+    background-color: #181514;
+    transition: 0.5s;
+}
+
+/* the icon attributes */
+.social-icons i {
+    font-size: 0.7cm;
+    font-weight: bold;
+    opacity: 0.9;
+    color: black;
+} 
+
+/*when cursor hovers over the icon it changes */
+.social-icons a:hover i {
+    color: #f3d4cd;
+    transition: 0.5s;
+}
+
+/* the link section attributes*/
+.footer-nav {
+    margin: 10px 0;
+}
+
+/* link sections flexbox attributes */
+.footer-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+/* the link attributes */
+.footer-nav ul li a {
+    color: #f0d9d1;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 0.55cm;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+/* when cursor hovers over link */
+.footer-nav ul li a:hover {
+    opacity: 1;
+    font-size: 0.6cm;
+}
+
+/* the very bottom section attributes */
+.footer-bottom {
+    background-color: #0f0d0d;
+    padding: 18px;
+    text-align: center;
+    font-size: 0.45cm;
+    color: #f0d9d1;
+}
+
+/*designer class attributes */
+.designer {
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/*makes the navigation links centered and columns when screen size is >600px*/
+@media (max-width: 600px) {
+    .footer-nav ul {
+        flex-direction: column;
+    }
+    .footer-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}

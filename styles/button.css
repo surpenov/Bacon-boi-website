@@ -1,0 +1,17 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#colorButton {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: red; /* Initial color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    height: 100px;
+    width: 400px;
+}

@@ -1,0 +1,32 @@
+.calculator body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*calculator*/
+.calculator{
+    max-width: 300px; /*sets max height to 300px*/
+    margin: 30px auto; /*centers container horizontally with margin auto*/
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #181514;
+    box-sizing: border-box; /*Ensures padding and borders are included in the width */
+    /* text-align: center; /*center-align: inline*/
+}
+
+.calculator input, .calculator button{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 0.7cm;
+    border: 1px solid #040400;
+    box-sizing: border-box; /*ensures width inclusdes padding and border */
+    transition: 0.5s;
+}
+
+.calculator button:hover{
+    background-color: rgb(196, 196, 196);
+    cursor: pointer;
+}
